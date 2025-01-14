@@ -179,9 +179,6 @@ rt {
   overflow-wrap: break-word !important;
 }
 
-.xiaoZi {
-  font-size: 14px;
-}
 
 /* 小标题 */
 .xiaoBiaoTi {
@@ -274,6 +271,29 @@ rt {
   font-size: 14px;
   overflow-wrap: break-word !important;
 }
+
+/* 超链接 */
+a:link {
+  color: rgb(100, 65, 37); /*未访问的链接颜色*/
+}
+
+a:visited {
+  color: rgb(100, 65, 37); /*已访问的链接颜色*/
+}
+
+a:hover {
+  color: blue; /*鼠标移动到链接的颜色*/
+  text-decoration: underline;
+}
+
+a:active {
+  color: orange; /*鼠标点击时的颜色*/
+}
+
+a {
+  text-decoration: none; /*去掉下划线*/
+}
+
 
 /* 页边距 */
 .container {
