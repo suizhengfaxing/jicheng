@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "py-1";
+    src: url("py-1.eot"); /* IE9 */
+    src: url("py-1.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url("py-1.woff") format("woff"), /* chrome、firefox */
+    url("py-1.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("py-1.svg#py-1") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

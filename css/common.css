@@ -1,0 +1,385 @@
+@charset "UTF-8";
+@import "../字体/汉语拼音/py-1.css";
+@import "../字体/楷体/SIMKAI.css";
+@import "../字体/移动端缺失字体/MySimSunExtB.css";
+@import "../字体/自定义字体/MyFont-Regular.css";
+
+/* H5公共样式，用于所有H5开发页面*/
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Arial, sans-serif, MySimSunExtB;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
+}
+
+body {
+  font-family: inherit;
+  font-size: 14px;
+  background: #fff;
+}
+
+/* 注音 */
+ruby {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  width: 1.1em;
+  align-items: center;
+  line-height: 1;
+}
+
+rt {
+  transform: scale(0.5, 1);
+  font-size: 0.7em;
+  font-weight: normal;
+  white-space: nowrap;
+  color: rgba(100, 65, 37, 0.8);
+  /* 使用半透明颜色值 */
+  font-family: "py-1";
+}
+
+.container-content-ZhuYin {
+  display: inline-block;
+  line-height: 3em;
+  margin-bottom: 0px;
+  padding: 0px;
+  outline: 0px;
+  max-width: 100%;
+  clear: both;
+  min-height: 1em;
+  color: rgb(100, 65, 37);
+  font-size: 16px;
+  overflow-wrap: break-word !important;
+  margin-left: 5px;
+}
+
+/* 自定义字形 */
+.custom-font {
+  font-family: 'MyFont-Regular'
+    /* 使用自定义字形 */
+}
+
+/* 括号 */
+.kuoHao {
+  font-family: "楷体", "楷体_GB2312", "SIMKAI";
+  word-break: keep-all;
+  /* 不换行 */
+  white-space: nowrap;
+  /* 不换行 */
+}
+
+.youPinYin {
+  width: 1em;
+}
+
+/* 一级标题 */
+.yiJiBiaoTi {
+  line-height: 3em;
+  margin-bottom: 0px;
+  padding: 0px;
+  outline: 0px;
+  max-width: 100%;
+  clear: both;
+  min-height: 1em;
+  color: rgb(114, 41, 41);
+  font-size: 24px;
+  text-indent: 0em;
+  text-align: center;
+  visibility: visible;
+  overflow-wrap: break-word !important;
+  font-weight: bold;
+}
+
+.buHuanHang {
+  word-break: keep-all;
+  /* 不换行 */
+  white-space: nowrap;
+  /* 不换行 */
+}
+
+/* 空行 */
+.kongHang {
+  margin-bottom: 0px;
+  padding: 0px;
+  outline: 0px;
+  max-width: 100%;
+  clear: both;
+  min-height: 1em;
+  overflow-wrap: break-word !important;
+}
+
+
+/* 二级标题 */
+.erJiBiaoTi {
+  line-height: 3em;
+  margin-bottom: 0px;
+  padding: 0px;
+  outline: 0px;
+  max-width: 100%;
+  clear: both;
+  min-height: 1em;
+  color: rgb(114, 41, 41);
+  font-size: 20px;
+  text-align: center;
+  visibility: visible;
+  overflow-wrap: break-word !important;
+  font-weight: bold;
+}
+
+/* 三级标题 */
+.sanJiBiaoTi {
+  line-height: 3em;
+  margin-bottom: 0px;
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+  max-width: 100%;
+  min-height: 1em;
+  clear: both;
+  color: rgb(114, 41, 41);
+  font-size: 18px;
+  visibility: visible;
+  overflow-wrap: break-word !important;
+  font-weight: bold;
+}
+
+.zuoDuiQi {
+  text-align: left;
+}
+
+
+.sanJiBiaoTi_ZhuYin_span {
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+  max-width: 100%;
+  color: rgba(114, 41, 41, 0.8);
+  /* 使用半透明颜色值 */
+  font-size: 14px;
+  visibility: visible;
+  overflow-wrap: break-word !important;
+}
+
+/* 作者 */
+.zuoZhe {
+  margin-bottom: 0px;
+  padding: 0px;
+  outline: 0px;
+  max-width: 100%;
+  clear: both;
+  min-height: 1em;
+  color: rgb(100, 65, 37);
+  font-family: "楷体", "楷体_GB2312", "SIMKAI";
+  font-size: 16px;
+  text-align: center;
+  visibility: visible;
+  overflow-wrap: break-word !important;
+}
+
+.xiaoZi {
+  font-size: 14px;
+}
+
+/* 小标题 */
+.xiaoBiaoTi {
+  line-height: 2em;
+  margin-bottom: 0px;
+  padding: 0px;
+  outline: 0px;
+  max-width: 100%;
+  clear: both;
+  min-height: 1em;
+  color: rgb(100, 65, 37);
+  font-size: 14px;
+  overflow-wrap: break-word !important;
+}
+
+.youDuiQi {
+  text-align: right;
+}
+
+/* 正文 */
+.zhengWen {
+  line-height: 2em;
+  margin-bottom: 0px;
+  padding: 0px;
+  outline: 0px;
+  max-width: 100%;
+  clear: both;
+  min-height: 1em;
+  color: rgb(100, 65, 37);
+  font-size: 16px;
+  overflow-wrap: break-word !important;
+}
+
+.juZhong {
+  text-align: center;
+}
+
+.zuoKongEr {
+  margin-left: 2em;
+}
+
+.xiaoZi_14 {
+  font-size: 14px;
+}
+
+.shuPai {
+  writing-mode : tb-rl;
+  line-height: 1em;
+  margin-left: 5px;
+}
+
+.xiaoZi_10 {
+  font-size: 10px;
+}
+
+.kaiTi {
+  font-family: "楷体", "楷体_GB2312", "SIMKAI";
+}
+
+.shangYi {
+  margin-top: -16px;
+}
+
+.xiaYi {
+  margin-top: 16px;
+}
+
+.zhengWen_ZhuYin_span {
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+  max-width: 100%;
+  color: rgba(100, 65, 37, 0.8);
+  /* 使用半透明颜色值 */
+  font-size: 12px;
+  visibility: visible;
+  overflow-wrap: break-word !important;
+}
+
+/* 脚注 */
+.jiaoZhu {
+  line-height: 2em;
+  margin-bottom: 0px;
+  padding: 0px;
+  outline: 0px;
+  max-width: 100%;
+  clear: both;
+  min-height: 1em;
+  color: rgb(100, 65, 37);
+  font-size: 14px;
+  overflow-wrap: break-word !important;
+}
+
+/* 页边距 */
+.container {
+  padding: 20px 20px 70px 20px !important;
+}
+
+/* 将具有默认margin和padding的标记置零，所有标记的margin、padding都在使用时具体定义 */
+* {
+  box-sizing: border-box;
+}
+
+/* 常用标签，基本标签默认样式取消，HTML标签，取消基本标签默认样式，防止不同浏览器显示效果不同 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+fieldset,
+button,
+input,
+textarea,
+th,
+td,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+select,
+textarea,
+button {
+  /*字体变清晰*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (min-width: 401px) {
+  html {
+    font-size: 125px !important;
+  }
+}
+
+@media only screen and (min-width: 428px) {
+  html {
+    font-size: 133.75px !important;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  html {
+    font-size: 150px !important;
+  }
+}
+
+@media only screen and (min-width: 569px) {
+  html {
+    font-size: 175px !important;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  html {
+    font-size: 200px !important;
+  }
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 0.14rem;
+  color: #333;
+
+}

@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "MyFont-Regular";
+    src: url("MyFont-Regular.eot"); /* IE9 */
+    src: url("MyFont-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url("MyFont-Regular.woff") format("woff"), /* chrome、firefox */
+    url("MyFont-Regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("MyFont-Regular.svg#MyFont-Regular") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

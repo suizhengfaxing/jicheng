@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "SIMKAI";
+    src: url("SIMKAI.eot"); /* IE9 */
+    src: url("SIMKAI.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url("SIMKAI.woff") format("woff"), /* chrome、firefox */
+    url("SIMKAI.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("SIMKAI.svg#SIMKAI") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
