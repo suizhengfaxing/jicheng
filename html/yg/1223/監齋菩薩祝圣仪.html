@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>腊月二十三</title>
+    <link rel="stylesheet" href="../../../css/common.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(250, 248, 247);
+        }
+
+        .container>>>img {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            margin: 2px auto;
+            /*min-height: 100vh;*/
+            /*border: 2px solid skyblue;*/
+        }
+
+        .detailsIMg {
+            width: 100%;
+            height: 223px;
+        }
+
+        .detailsText {
+            /* margin: 10px 0;
+            text-indent: 40px; */
+            color: #97816B;
+            max-width: 100%;
+            min-height: 100%;
+            /*border: 3px solid red;*/
+            /*margin: 0 auto;*/
+            /*display: flex;*/
+            /*justify-content: center;*/
+        }
+
+        .texts {
+            width: 80% !important;
+            margin-bottom: 70px;
+            /*background-color: blue;*/
+        }
+
+        .texts div {
+            max-width: 100%;
+            /*overflow: hidden;*/
+            /*white-space: wrap;*/
+            /*text-overflow: ellipsis;*/
+            /*   margin: 0 auto;*/
+        }
+
+        .texts_box1 {
+            /*margin: 0 !important;*/
+            width: 80% !important;
+            margin-bottom: 70px !important;
+            /*border: 4px solid blue; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="detailsText">
+            <rich-text :nodes="texts" class="texts">
+                <button id="pinyin-button" onclick="zh_tran('s');">简</button>
+                <p class="yiJiBiaoTi">
+                    監齋菩薩祝圣仪
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    一、香赞
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;炉香乍热。法界蒙薰。诸佛海会悉遥闻。随处结祥云。诚意方殷。诸佛现全身。
+                    <br>&emsp;&emsp;南無香云盖菩萨摩诃萨<span class="kuoHao">（三称）</span>
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    二、祝咒正文
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;持諷準提咒<span class="kuoHao">（三遍）</span>
+                    <br>&emsp;&emsp;稽首皈依苏悉帝。头面顶礼七俱胝。我今称赞大准提。唯愿慈悲垂加护。南无飒哆喃。三藐三菩陀。俱胝喃。怛侄他。唵。折戾主戾。准提娑婆诃。
+                    <br>&emsp;&emsp;南無監齋使者菩薩<span class="kuoHao">（三称）</span>
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    三、表白祝文
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;天心有格，聖德無私；潔法供以精嚴，率龍神而擁護。仰冀天慈，俯垂明鑒。(入貫)茲遇(朔望)旦良辰，謹有現前弟子，詣乎祠下，諷演秘章，稱揚聖號，香食供物，所集功德，專申祈禱：
+                    <br>&emsp;&emsp;九天雲廚監齋使者、大聖緊那羅王菩薩部屬等衆。所冀廚堂清潔，齋饌豐饒，香羞廣勝於酥酡，法喜咸資於監督。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    四、贊颂
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;監齋使者，火部威神。调和百味荐惟馨，灾耗永无侵。护命资身，家庭永蒙恩。
+                    <br>&emsp;&emsp;南無焰慧地菩薩摩诃薩<span class="kuoHao">（三称）</span>
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    五、回向
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;愿以此功德，普及于一切，
+                    <br>&emsp;&emsp;我等与众生，皆共成佛道。                    
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    六、三皈依结束
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依佛，当愿众生，
+                    <br>&emsp;&emsp;体解大道，发无上心。
+                    <br>&emsp;&emsp;自皈依法，当愿众生，
+                    <br>&emsp;&emsp;深入经藏，智慧如海。
+                    <br>&emsp;&emsp;自皈依僧，当愿众生，
+                    <br>&emsp;&emsp;统理大众，一切无碍，
+                    <br>&emsp;&emsp;和南圣众。
+                </p>
+                <p class="kongHang">
+                </p>
+            </rich-text>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../js/wrapRubies.js"></script>
+    <script type="text/javascript" src="../../../js/zh.js"></script>
+</body>
+
+</html>

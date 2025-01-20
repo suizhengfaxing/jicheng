@@ -294,6 +294,18 @@ a {
   text-decoration: none; /*去掉下划线*/
 }
 
+#pinyin-button {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgba(100, 65, 37, 0.7);
+  font-size: 12px;
+  cursor: pointer;
+}
 
 /* 页边距 */
 .container {
