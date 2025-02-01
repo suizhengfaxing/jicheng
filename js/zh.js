@@ -82,15 +82,21 @@ window.onload = function() {
 // 保存滚动位置
 window.onbeforeunload = function() {
     sessionStorage.setItem("scrollPosition", window.scrollY);
+    sessionStorage.setItem("isReload", "true");  // 设置标识，表示是刷新后
 };
 
 // 恢复滚动位置
 window.addEventListener('load', function() {
-    requestAnimationFrame(function() {
-        var scrollPosition = sessionStorage.getItem("scrollPosition");
-        if (scrollPosition) {
-            window.scrollTo(0, parseInt(scrollPosition));
+    // 只在页面刷新时恢复滚动位置
+    if (sessionStorage.getItem("isReload") === "true") {
+        requestAnimationFrame(function() {
+            var scrollPosition = sessionStorage.getItem("scrollPosition");
+            if (scrollPosition) {
+                window.scrollTo(0, parseInt(scrollPosition));
+            }
             sessionStorage.removeItem("scrollPosition");
-        }
-    });
+            sessionStorage.removeItem("isReload");  // 清除刷新标识
+        });
+    }
 });
+
