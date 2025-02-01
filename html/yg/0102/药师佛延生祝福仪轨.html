@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正月初二上午</title>
+    <link rel="stylesheet" href="../../../css/common.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(250, 248, 247);
+        }
+
+        .container>>>img {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            margin: 2px auto;
+            /*min-height: 100vh;*/
+            /*border: 2px solid skyblue;*/
+        }
+
+        .detailsIMg {
+            width: 100%;
+            height: 223px;
+        }
+
+        .detailsText {
+            /* margin: 10px 0;
+            text-indent: 40px; */
+            color: #97816B;
+            max-width: 100%;
+            min-height: 100%;
+            /*border: 3px solid red;*/
+            /*margin: 0 auto;*/
+            /*display: flex;*/
+            /*justify-content: center;*/
+        }
+
+        .texts {
+            width: 80% !important;
+            margin-bottom: 70px;
+            /*background-color: blue;*/
+        }
+
+        .texts div {
+            max-width: 100%;
+            /*overflow: hidden;*/
+            /*white-space: wrap;*/
+            /*text-overflow: ellipsis;*/
+            /*   margin: 0 auto;*/
+        }
+
+        .texts_box1 {
+            /*margin: 0 !important;*/
+            width: 80% !important;
+            margin-bottom: 70px !important;
+            /*border: 4px solid blue; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="detailsText">
+            <rich-text :nodes="texts" class="texts">
+                <button id="pinyin-button" onclick="zh_tran('s');">简</button>
+                <p class="yiJiBiaoTi">
+                    药师佛延生祝福仪轨
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    一、戒定真香赞
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;戒定真香。焚起冲天上。弟子虔诚。爇在金炉放。顷刻氤氲。即遍满十方。昔日耶输。免难消灾障。
+                    <br>&emsp;&emsp;南无香云盖菩萨摩诃萨（三称）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    二、称佛德号
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无消灾延寿药师佛（三称）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    三、正诵经文
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;《药师经》云：
+                    <br>&emsp;&emsp;佛告曼殊师利，东方去此，过十殑伽沙等佛土，有世界名净琉璃。佛号药师琉璃光如来，应，正等觉，明行圆满，善逝，世间解，无上士，调御丈夫，天人师，佛，薄伽梵。
+                    <br>&emsp;&emsp;曼殊室利，彼世尊药师琉璃光如来，本行菩萨道时，发十二大愿，令诸有情，所求皆得。
+                    <br>&emsp;&emsp;第一大愿，愿我来世，得阿耨多罗三藐三菩提时，自身光明炽然，照耀无量无数无边世界，以三十二大丈夫相，八十随形，庄严其身，令一切有情，如我无异。
+                    <br>&emsp;&emsp;第二大愿，愿我来世得菩提时，身如琉璃，内外明彻，净无瑕秽，光明广大，功德巍巍，身善安住，焰网庄严，过于日月。幽冥众生，悉蒙开晓，随意所趣，作诸事业。
+                    <br>&emsp;&emsp;第三大愿，愿我来世得菩提时，以无量无边智慧方便，令诸有情，皆得无尽所受用物，莫令众生，有所乏少。
+                    <br>&emsp;&emsp;第四大愿，愿我来世得菩提时，若诸有情行邪道者，悉令安住菩提道中。若行声闻独觉乘者，皆以大乘而安立之。
+                    <br>&emsp;&emsp;第五大愿，愿我来世得菩提时，若有无量无边有情，于我法中修行梵行，一切皆令得不缺戒，具三聚戒。设有毁犯，闻我名已，还得清净，不堕恶趣。
+                    <br>&emsp;&emsp;第六大愿，愿我来世得菩提时，若诸有情，其身下劣，诸根不具，丑陋，顽愚，盲，聋，喑，哑，挛躄，背偻，白癞，癫狂，种种病苦。闻我名已，一切皆得端正黠慧，诸根完具，无诸疾苦。
+                    <br>&emsp;&emsp;第七大愿，愿我来世得菩提时，若诸有情众病逼切，无救无归，无医无药，无亲无家，贫穷多苦。我之名号，一经其耳，众病悉除，身心安乐，家属资具，悉皆丰足，乃至证得无上菩提。
+                    <br>&emsp;&emsp;第八大愿，愿我来世得菩提时，若有女人为女百恶之所逼恼，极生厌离，愿舍女身。闻我名已，一切皆得转女成男，具丈夫相，乃至证得无上菩提。
+                    <br>&emsp;&emsp;第九大愿，愿我来世得菩提时，令诸有情出魔罥网，解脱一切外道缠缚。若堕种种恶见稠林，皆当引摄置于正见，渐令修习诸菩萨行，速证无上正等菩提。
+                    <br>&emsp;&emsp;第十大愿，愿我来世得菩提时，若诸有情，王法所录，绳缚鞭挞，系闭牢狱，或当刑戮，及余无量灾难凌辱，悲愁煎逼，身心受苦。若闻我名，以我福德威神力故，皆得解脱一切忧苦。
+                    <br>&emsp;&emsp;第十一大愿，愿我来世得菩提时，若诸有情，饥渴所恼，为求食故造诸恶业。得闻我名，专念受持，我当先以上妙饮食饱足其身，后以法味毕竟安乐而建立之。
+                    <br>&emsp;&emsp;第十二大愿，愿我来世得菩提时，若诸有情，贫无衣服，蚊虻寒热，昼夜逼恼。若闻我名，专念受持，如其所好即得种种上妙衣服，亦得一切宝庄严具，华鬘涂香，鼓乐众伎，随心所玩，皆令满足。
+                    <br>&emsp;&emsp;曼殊室利，是为彼世尊药师琉璃光如来，应，正等觉，行菩萨道时，所发十二微妙上愿。（一遍）
+                    <br>&emsp;&emsp;奈麻消灾延寿药师佛。（随自己念多少）
+                    <br>&emsp;&emsp;南谟薄伽伐帝。鞞杀社。窭噜薛琉璃。钵喇婆。喝啰阇也。怛他揭多耶。阿啰喝谛。三藐三勃陀耶。怛侄他。唵。鞞杀逝。鞞杀逝。鞞杀社。三没揭谛娑诃。（随自己念多少遍）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    四、表白祝福愿文
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;无上士、调御丈夫、天人师、佛、世尊。慈悲伟大的佛陀。请您聆听我志诚的祈愿祝祷。今有弟子（某某）恭对三宝前。諷誦药师本愿以及药师灌顶神呪。稱揚聖號。所萃洪因。端爲（某某）祝延（愿他身心康泰，六时吉祥，福慧增长；愿导师法体安康，法缘增上，所愿皆满；愿所有家人朋友诸事如意，身心康泰，二六时中吉祥喜乐；愿所有同修早证菩提，共成佛道）。
+                    <br>&emsp;&emsp;金剛無量壽佛。仁王菩薩摩訶薩。摩訶般若波羅密。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    五、圣道回向
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;愿以此功德
+                    <br>&emsp;&emsp;回向于一切
+                    <br>&emsp;&emsp;我等与众生
+                    <br>&emsp;&emsp;皆共成佛道
+                    <br>&emsp;&emsp;十方三世一切佛
+                    <br>&emsp;&emsp;一切菩萨摩诃萨
+                    <br>&emsp;&emsp;摩诃般若波罗蜜
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    六、举扬圣德赞
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;藥師海會。琉璃相光。八大菩薩降吉祥。七佛廣宣揚。日月威光。功德實難量。
+                    <br>&emsp;&emsp;奈麻藥師琉璃光如來
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    七、三皈依
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依佛&emsp;当愿众生
+                    <br>&emsp;&emsp;体解大道&emsp;发无上心
+                    <br>&emsp;&emsp;自皈依法&emsp;当愿众生
+                    <br>&emsp;&emsp;深入经藏&emsp;智慧如海
+                    <br>&emsp;&emsp;自皈依僧&emsp;当愿众生
+                    <br>&emsp;&emsp;统理大众&emsp;一切无碍
+                    <br>&emsp;&emsp;和南圣众
+                </p>
+                <p class="kongHang">
+                </p>
+            </rich-text>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../js/wrapRubies.js"></script>
+    <script type="text/javascript" src="../../../js/zh.js"></script>
+</body>
+
+</html>

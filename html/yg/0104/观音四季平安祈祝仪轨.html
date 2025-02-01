@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正月初四</title>
+    <link rel="stylesheet" href="../../../css/common.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(250, 248, 247);
+        }
+
+        .container>>>img {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            margin: 2px auto;
+            /*min-height: 100vh;*/
+            /*border: 2px solid skyblue;*/
+        }
+
+        .detailsIMg {
+            width: 100%;
+            height: 223px;
+        }
+
+        .detailsText {
+            /* margin: 10px 0;
+            text-indent: 40px; */
+            color: #97816B;
+            max-width: 100%;
+            min-height: 100%;
+            /*border: 3px solid red;*/
+            /*margin: 0 auto;*/
+            /*display: flex;*/
+            /*justify-content: center;*/
+        }
+
+        .texts {
+            width: 80% !important;
+            margin-bottom: 70px;
+            /*background-color: blue;*/
+        }
+
+        .texts div {
+            max-width: 100%;
+            /*overflow: hidden;*/
+            /*white-space: wrap;*/
+            /*text-overflow: ellipsis;*/
+            /*   margin: 0 auto;*/
+        }
+
+        .texts_box1 {
+            /*margin: 0 !important;*/
+            width: 80% !important;
+            margin-bottom: 70px !important;
+            /*border: 4px solid blue; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="detailsText">
+            <rich-text :nodes="texts" class="texts">
+                <button id="pinyin-button" onclick="zh_tran('s');">简</button>
+                <p class="yiJiBiaoTi">
+                    观音四季平安祈祝仪轨
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    一、戒定真香赞
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;戒定真香。焚起冲天上。弟子虔诚。爇在金炉放。顷刻氤氲。即遍满十方。昔日耶输。免难消灾障。
+                    <br>&emsp;&emsp;南无香云盖菩萨摩诃萨（三称）
+                    
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    二、称佛德号
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无大悲观世音菩萨（三称）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    三、正诵经文
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;《妙法蓮華經》云：
+                    <br>&emsp;&emsp;觀世音菩薩普門品偈曰。世尊妙相具。我今重問彼。佛子何因緣。名為觀世音。具足妙相尊。偈答無盡意。汝聽觀音行。善應諸方所。宏誓深如海。歷劫不思議。侍多千億佛。發大清淨願。我為汝略說。聞名及見身。心念不空過。能滅諸有苦。假使興害意。推落大火坑。念彼觀音力。火坑變成池。或漂流巨海。龍魚諸鬼難。念彼觀音力。波浪不能沒。或在須彌峯。為人所推墮。念彼觀音力。如日虗空住。或被惡人逐。墮落金剛山。念彼觀音力。不能損一毛。或值怨賊繞。各執刀加害。念彼觀音力。咸即起慈心。或遭王難苦。臨刑欲壽終。念彼觀音力。刀尋段段壞。或囚禁枷鎻。手足被杻械。念彼觀音力。釋然得解脫。呪詛諸毒藥。所欲害身者。念彼觀音力。還著於本人。或遇惡羅剎。毒龍諸鬼等。念彼觀音力。時悉不敢害。若惡獸圍繞。利牙爪可怖。念彼觀音力。疾走無邊方。蚖蛇及蝮蠍。氣毒烟火然。念彼觀音力。尋聲自回去。雲雷皷掣電。降雹澍大雨。念彼觀音力。應時得消散。衆生被困厄。無量苦逼身。觀音妙智力。能救世間苦。具足神通力。廣修智方便。十方諸國土。無剎不現身。種種諸惡趣。地獄鬼畜生。生老病死苦。以漸悉令滅。真觀清淨觀。廣大智慧觀。悲觀及慈觀。常願常瞻仰。無垢清淨光。慧日破諸暗。能伏灾風火。普明照世間。悲體戒雷震。慈意妙大雲。澍甘露法雨。滅除煩惱焰。諍訟經官處。怖畏軍陣中。念彼觀音力。衆怨悉退散。妙音觀世音。梵音海潮音。勝彼世間音。是故須常念。念念勿生疑。觀世音淨聖。於苦惱死厄。能為作依怙。具一切功德。慈眼視衆生。福聚海無量。是故應頂禮。（一遍）
+                    <br>&emsp;&emsp;奈麻观世音菩萨。(随自己念多少）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    四、表白祝福愿文
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;无上士、调御丈夫、天人师、佛、世尊。慈悲伟大的佛陀请您聆听我真诚的祈愿。今有弟子（某人）恭对三宝前，虔诚諷誦《法華经.普门品》。稱揚观世音聖號。所萃洪因。端爲我的｛父母亲、导师、亲戚、朋友、同修、……｝祝福。愿｛稱揚观世音聖號。所萃洪因。端爲我的｛父母亲、导师、亲戚、朋友、同修、……｝祝福。愿｛他们健康平安，吉祥喜乐，所求如意，福慧双增；愿圣教兴隆，正法久住；愿国丰民安，风调雨顺，崇德兴仁；愿世界和平，灾厉不起，众生安乐｝。
+                    <br>&emsp;&emsp;金剛無量壽佛。仁王菩薩摩訶薩。摩訶般若波羅密。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    五、圣道回向
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;愿以此功德
+                    <br>&emsp;&emsp;回向于一切
+                    <br>&emsp;&emsp;我等与众生
+                    <br>&emsp;&emsp;皆共成佛道
+                    <br>&emsp;&emsp;十方三世一切佛
+                    <br>&emsp;&emsp;一切菩萨摩诃萨
+                    <br>&emsp;&emsp;摩诃般若波罗蜜
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    六、举扬圣德赞
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;手持楊枝。頂戴如來。跏趺端坐寶蓮臺。救苦甚悲哀。一念能回。無量慈門開。
+                    <br>&emsp;&emsp;南无观世音菩萨摩诃萨摩诃般若。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    七、三皈依
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依佛&emsp;当愿众生
+                    <br>&emsp;&emsp;体解大道&emsp;发无上心
+                    <br>&emsp;&emsp;自皈依法&emsp;当愿众生
+                    <br>&emsp;&emsp;深入经藏&emsp;智慧如海
+                    <br>&emsp;&emsp;自皈依僧&emsp;当愿众生
+                    <br>&emsp;&emsp;统理大众&emsp;一切无碍
+                    <br>&emsp;&emsp;和南圣众
+                </p>
+                <p class="kongHang">
+                </p>
+            </rich-text>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../js/wrapRubies.js"></script>
+    <script type="text/javascript" src="../../../js/zh.js"></script>
+</body>
+
+</html>
