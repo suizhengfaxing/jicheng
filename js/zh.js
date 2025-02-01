@@ -96,9 +96,7 @@ window.addEventListener('load', function() {
 // 保存滚动位置，只有在刷新时才保存
 window.addEventListener('beforeunload', function() {
     // 保存滚动位置，只在刷新时保存
-    if (performance.navigation.type === 1) {
+    if (performance.navigation.type === 0 || performance.navigation.type === 1) {
         sessionStorage.setItem("scrollPosition", window.scrollY);
     }
 });
-
-
