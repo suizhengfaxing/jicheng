@@ -79,24 +79,26 @@ window.onload = function() {
 
 };
 
-// 保存滚动位置
-window.onbeforeunload = function() {
-    sessionStorage.setItem("scrollPosition", window.scrollY);
-    sessionStorage.setItem("isReload", "true");  // 设置标识，表示是刷新后
-};
-
 // 恢复滚动位置
 window.addEventListener('load', function() {
-    // 只在页面刷新时恢复滚动位置
-    if (sessionStorage.getItem("isReload") === "true") {
+    // 检查是否是刷新操作
+    if (performance.navigation.type === 1) { // 1 表示页面是刷新（Reload）
         requestAnimationFrame(function() {
             var scrollPosition = sessionStorage.getItem("scrollPosition");
             if (scrollPosition) {
                 window.scrollTo(0, parseInt(scrollPosition));
+                sessionStorage.removeItem("scrollPosition");
             }
-            sessionStorage.removeItem("scrollPosition");
-            sessionStorage.removeItem("isReload");  // 清除刷新标识
         });
     }
 });
+
+// 保存滚动位置，只有在刷新时才保存
+window.addEventListener('beforeunload', function() {
+    // 保存滚动位置，只在刷新时保存
+    if (performance.navigation.type === 1) {
+        sessionStorage.setItem("scrollPosition", window.scrollY);
+    }
+});
+
 
