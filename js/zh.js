@@ -77,5 +77,20 @@ window.onload = function() {
         }
     });
 
-    
 };
+
+// 保存滚动位置
+window.onbeforeunload = function() {
+    sessionStorage.setItem("scrollPosition", window.scrollY);
+};
+
+// 恢复滚动位置
+window.addEventListener('load', function() {
+    requestAnimationFrame(function() {
+        var scrollPosition = sessionStorage.getItem("scrollPosition");
+        if (scrollPosition) {
+            window.scrollTo(0, parseInt(scrollPosition));
+            sessionStorage.removeItem("scrollPosition");
+        }
+    });
+});
