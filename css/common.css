@@ -32,7 +32,7 @@ ruby {
 }
 
 rt {
-  transform: scale(0.5, 1);
+  /* transform: scale(0.5, 1); */
   font-size: 0.7em;
   font-weight: normal;
   white-space: nowrap;
@@ -40,6 +40,11 @@ rt {
   /* 使用半透明颜色值 */
   font-family: "py-1";
 }
+
+/* 为缩放添加过渡效果 */
+/* ruby rt {
+  transition: transform 0.1s ease-in-out;
+} */
 
 .container-content-ZhuYin {
   display: inline-block;
@@ -54,6 +59,10 @@ rt {
   font-size: 16px;
   overflow-wrap: break-word !important;
   margin-left: 5px;
+}
+
+.ziDongKuanDu {
+  width: auto;
 }
 
 /* 自定义字形 */
@@ -225,7 +234,7 @@ rt {
 }
 
 .shuPai {
-  writing-mode : tb-rl;
+  writing-mode: tb-rl;
   line-height: 1em;
   margin-left: 5px;
 }
@@ -274,24 +283,29 @@ rt {
 
 /* 超链接 */
 a:link {
-  color: rgb(100, 65, 37); /*未访问的链接颜色*/
+  color: rgb(100, 65, 37);
+  /*未访问的链接颜色*/
 }
 
 a:visited {
-  color: rgb(100, 65, 37); /*已访问的链接颜色*/
+  color: rgb(100, 65, 37);
+  /*已访问的链接颜色*/
 }
 
 a:hover {
-  color: blue; /*鼠标移动到链接的颜色*/
+  color: blue;
+  /*鼠标移动到链接的颜色*/
   text-decoration: underline;
 }
 
 a:active {
-  color: orange; /*鼠标点击时的颜色*/
+  color: orange;
+  /*鼠标点击时的颜色*/
 }
 
 a {
-  text-decoration: none; /*去掉下划线*/
+  text-decoration: none;
+  /*去掉下划线*/
 }
 
 #pinyin-button {

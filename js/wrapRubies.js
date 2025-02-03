@@ -54,3 +54,34 @@ function wrapContentInSpan() {
 
 // 调用函数
 wrapContentInSpan();
+
+window.addEventListener('load', function () {
+    // 延迟处理 DOM 操作，避免阻塞渲染
+    setTimeout(() => {
+        const rubies = document.querySelectorAll('ruby');
+        
+        // 先计算所有拼音的缩放比例
+        rubies.forEach(ruby => {
+            const hanzi = ruby;
+            const pinyin = ruby.querySelector('rt');
+            const hanziWidth = hanzi.getBoundingClientRect().width;
+            const pinyinWidth = pinyin.getBoundingClientRect().width;
+            
+            // 计算拼音的缩放比例
+            let scaleX = hanziWidth / pinyinWidth;
+
+            // 设置最大缩放限制为 0.8
+            scaleX = Math.min(scaleX, 0.8);
+
+            // 存储缩放值
+            ruby._scaleX = scaleX;
+        });
+
+        // 最后一次性更新拼音的样式
+        rubies.forEach(ruby => {
+            const pinyin = ruby.querySelector('rt');
+            pinyin.style.transform = `scaleX(${ruby._scaleX})`;
+        });
+    }, 100); // 延迟100ms
+});
+

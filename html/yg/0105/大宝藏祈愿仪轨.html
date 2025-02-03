@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正月初五</title>
+    <link rel="stylesheet" href="../../../css/common.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(250, 248, 247);
+        }
+
+        .container>>>img {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            margin: 2px auto;
+            /*min-height: 100vh;*/
+            /*border: 2px solid skyblue;*/
+        }
+
+        .detailsIMg {
+            width: 100%;
+            height: 223px;
+        }
+
+        .detailsText {
+            /* margin: 10px 0;
+            text-indent: 40px; */
+            color: #97816B;
+            max-width: 100%;
+            min-height: 100%;
+            /*border: 3px solid red;*/
+            /*margin: 0 auto;*/
+            /*display: flex;*/
+            /*justify-content: center;*/
+        }
+
+        .texts {
+            width: 80% !important;
+            margin-bottom: 70px;
+            /*background-color: blue;*/
+        }
+
+        .texts div {
+            max-width: 100%;
+            /*overflow: hidden;*/
+            /*white-space: wrap;*/
+            /*text-overflow: ellipsis;*/
+            /*   margin: 0 auto;*/
+        }
+
+        .texts_box1 {
+            /*margin: 0 !important;*/
+            width: 80% !important;
+            margin-bottom: 70px !important;
+            /*border: 4px solid blue; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="detailsText">
+            <rich-text :nodes="texts" class="texts">
+                <button id="pinyin-button" onclick="zh_tran('s');">简</button>
+                <p class="yiJiBiaoTi">
+                    大宝藏祈愿仪轨
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    一、炉香赞
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;炉香乍热。法界蒙熏。诸佛海会悉遥闻。随处结祥云。诚意方殷。诸佛现全身。
+                    <br>&emsp;&emsp;南无香云盖菩萨摩诃萨（三称）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    二、称圣德号
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无多宝天王菩萨（三称）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    三、正诵经文
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;北方毘沙門多聞寶藏天王神妙陀羅尼別行儀軌
+                    <br>&emsp;&emsp;特進試鴻臚卿大興善寺三藏沙門大廣智不空奉　詔譯
+                    <br>&emsp;&emsp;天王大身陀羅尼曰。
+                </p>
+                <div class="container-content-ZhuYin">
+                    &emsp;&emsp;<ruby>曩<rt>nǎng</rt></ruby>
+                    <ruby>謨<rt>mó</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>囉<rt>luó</rt></ruby>
+                    <ruby>怛<rt>dá</rt></ruby>
+                    <ruby>曩<rt>nǎng</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合)<rt>&emsp;</rt></ruby>
+                    <ruby>怛<rt>dá</rt></ruby>
+                    <ruby>囉<rt>luó</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合)<rt>&emsp;</rt></ruby>
+                    <ruby>夜<rt>yè</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>曩<rt>nǎng</rt></ruby>
+                    <ruby>謨<rt>mó</rt></ruby>
+                    <ruby>失<rt>shī</rt></ruby>
+                    <ruby>戰<rt>zhàn</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合)<rt>&emsp;</rt></ruby>
+                    <ruby>荼<rt>tú</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>嚩<rt>pó</rt></ruby>
+                    <ruby>日<rt>rì</rt></ruby>
+                    <ruby>囉<rt>luó</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合)<rt>&emsp;</rt></ruby>
+                    <ruby>播<rt>bō</rt></ruby>
+                    <ruby>拏<rt>ná</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>曳<rt>yì</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>摩<rt>mó</rt></ruby>
+                    <ruby>賀<rt>hè</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>藥<rt>yào</rt></ruby>
+                    <ruby>叉<rt>chā</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>細<rt>xì</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>曩<rt>nǎng</rt></ruby>
+                    <ruby>鉢<rt>bō</rt></ruby>
+                    <ruby>跢<rt>duō</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合引)<rt>&emsp;</rt></ruby>
+                    <ruby>曳<rt>yì</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>曩<rt>nǎng</rt></ruby>
+                    <ruby>謨<rt>mó</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>阿<rt>ē</rt></ruby>
+                    <ruby>他<rt>tā</rt></ruby>
+                    <ruby>劫<rt>jié</rt></ruby>
+                    <ruby>路<rt>lù</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>步<rt>bù</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>跢<rt>duō</rt></ruby>
+                    <ruby>羅<rt>luó</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(一)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>地<rt>dì</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(入)<rt>&emsp;</rt></ruby>
+                    <ruby>捨<rt>shě</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>吠<rt>fèi</rt></ruby>
+                    <ruby>室<rt>shì</rt></ruby>
+                    <ruby>囉<rt>luó</rt></ruby>
+                    <ruby>摩<rt>mó</rt></ruby>
+                    <ruby>拏<rt>ná</rt></ruby>
+                    <ruby>嚩<rt>pó</rt></ruby>
+                    <ruby>左<rt>zuǒ</rt></ruby>
+                    <ruby>曩<rt>nǎng</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>薩<rt>sà</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(三)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>摩<rt>mó</rt></ruby>
+                    <ruby>賀<rt>hè</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>囉<rt>luó</rt></ruby>
+                    <ruby>惹<rt>rě</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>薩<rt>sà</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(四)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>夜<rt>yè</rt></ruby>
+                    <ruby>乞<rt>qǐ</rt></ruby>
+                    <ruby>叉<rt>chā</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>地<rt>dì</rt></ruby>
+                    <ruby>波<rt>bō</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合)<rt>&emsp;</rt></ruby>
+                    <ruby>哆<rt>duō</rt></ruby>
+                    <ruby>薩<rt>sà</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(五)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>嚩<rt>pó</rt></ruby>
+                    <ruby>摩<rt>mó</rt></ruby>
+                    <ruby>多<rt>duō</rt></ruby>
+                    <ruby>薩<rt>sà</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(六)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>薩<rt>sà</rt></ruby>
+                    <ruby>覩<rt>dǔ</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合)<rt>&emsp;</rt></ruby>
+                    <ruby>哆<rt>duō</rt></ruby>
+                    <ruby>薩<rt>sà</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(七)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>婆<rt>pó</rt></ruby>
+                    <ruby>捨<rt>shě</rt></ruby>
+                    <ruby>那<rt>nà</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(八)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>鉢<rt>bō</rt></ruby>
+                    <ruby>囉<rt>luó</rt></ruby>
+                    <ruby>嚩<rt>pó</rt></ruby>
+                    <ruby>賀<rt>hè</rt></ruby>
+                    <ruby>娜<rt>nà</rt></ruby>
+                    <ruby>薩<rt>sà</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(九)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>呬<rt>xì</rt></ruby>
+                    <ruby>摩<rt>mó</rt></ruby>
+                    <ruby>馱<rt>tuó</rt></ruby>
+                    <ruby>吒<rt>zhà</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(十)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>吒<rt>zhà</rt></ruby>
+                    <ruby>尼<rt>ní</rt></ruby>
+                    <ruby>鉢<rt>bō</rt></ruby>
+                    <ruby>囉<rt>luó</rt></ruby>
+                    <ruby>沙<rt>shā</rt></ruby>
+                    <ruby>夜<rt>yè</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>弭<rt>mǐ</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(十一)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>怛<rt>dá</rt></ruby>
+                    <ruby>儞<rt>nǐ</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合)<rt>&emsp;</rt></ruby>
+                    <ruby>他<rt>tā</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(十二)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>俱<rt>jù</rt></ruby>
+                    <ruby>曬<rt>shài</rt></ruby>
+                    <ruby>弭<rt>mǐ</rt></ruby>
+                    <ruby>俱<rt>jù</rt></ruby>
+                    <ruby>曬<rt>shài</rt></ruby>
+                    <ruby>弭<rt>mǐ</rt></ruby>
+                    <ruby>俱<rt>jù</rt></ruby>
+                    <ruby>沙<rt>shài</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(十三)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>尾<rt>wěi</rt></ruby>
+                    <ruby>捨<rt>shě</rt></ruby>
+                    <ruby>囉<rt>luó</rt></ruby>
+                    <ruby>摩<rt>mó</rt></ruby>
+                    <ruby>娜<rt>nà</rt></ruby>
+                    <ruby>薩<rt>sà</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(十四)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>摩<rt>mó</rt></ruby>
+                    <ruby>賀<rt>hè</rt></ruby>
+                    <ruby>羅<rt>luó</rt></ruby>
+                    <ruby>惹<rt>rě</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(十五)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>翳<rt>yì</rt></ruby>
+                    <ruby>畔<rt>pàn</rt></ruby>
+                    <ruby>馱<rt>tuó</rt></ruby>
+                    <ruby>迦<rt>jiā</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(十六)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>寧<rt>níng</rt></ruby>
+                    <ruby>哆<rt>duō</rt></ruby>
+                    <ruby>羅<rt>luó</rt></ruby>
+                    <ruby>摩<rt>mó</rt></ruby>
+                    <ruby>蹉<rt>cuō</rt></ruby>
+                    <ruby>覩<rt>dǔ</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(十七)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>薩<rt>sà</rt></ruby>
+                    <ruby>嚩<rt>pó</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合引)<rt>&emsp;</rt></ruby>
+                    <ruby>賀<rt>hè</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(十八)<rt>&emsp;</rt></ruby>
+                </div>
+                <p class="zhengWen xiaYi">
+                    &emsp;&emsp;若有受持者。清淨念誦三十萬遍。天王加被中所作事業起心動念降伏。乃至一切榮祿官職我隨汝心願。若有人於月一日十五日起首。念誦三十萬遍。作壇者有音樂。但有少微塵心依隨。我常擁護。如護眼精。如護身命。若口含香念誦心自他知。若常持誦我真言不絕。我隨是人坐臥。常隨是人出入往來。我隨是人意願滿足。若每日誦真言一百八遍。滅去身中一百八劫罪。若誦持我真言滿一萬遍。能滅八萬四千十惡五逆重罪。破塔破戒不孝之罪悉皆消滅。若對天王面。誦持十萬遍身真言。隨事亦須小小稱意。若日日供養我形像者。乃與我作意音樂乳粥供養者。當金甲之身示現令願滿足。若和合諸香。取牛黃雄黃各等分。加持安我像足下。我與香法成就隨汝所願塗自額。所向處見人國王王子大臣官長諸貴人等。并一切所見者歡喜。兵士愛念。若能每日日中時。面向北對像前。誦我心真言滿三十萬遍。我示現大將身。手持戟劍現前。我於夢中現身。或於遠山頂示汝令見。滿於諸願。如不見吾身。亦隨汝願。應念加被。
+                    <br>&emsp;&emsp;北方天王心真言曰。
+                </p>
+                <div class="container-content-ZhuYin">
+                    &emsp;&emsp;
+                    <ruby>曩<rt>nǎng</rt></ruby>
+                    <ruby>謨<rt>mó</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>囉<rt>luó</rt></ruby>
+                    <ruby>怛<rt>dá</rt></ruby>
+                    <ruby>曩<rt>nǎng</rt></ruby>
+                    <ruby>怛<rt>dá</rt></ruby>
+                    <ruby>羅<rt>luó</rt></ruby>
+                    <ruby>夜<rt>yè</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>曩<rt>nǎng</rt></ruby>
+                    <ruby>謨<rt>mó</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>失<rt>shī</rt></ruby>
+                    <ruby>戰<rt>zhàn</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>荼<rt>tú</rt></ruby>
+                    <ruby>嚩<rt>pó</rt></ruby>
+                    <ruby>日<rt>rì</rt></ruby>
+                    <ruby>囉<rt>luó</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合)<rt>&emsp;</rt></ruby>
+                    <ruby>播<rt>bō</rt></ruby>
+                    <ruby>拏<rt>ná</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>曳<rt>yì</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>摩<rt>mó</rt></ruby>
+                    <ruby>賀<rt>hè</rt></ruby>
+                    <ruby>藥<rt>yào</rt></ruby>
+                    <ruby>乞<rt>qǐ</rt></ruby>
+                    <ruby>叉<rt>chā</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合)<rt>&emsp;</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>細<rt>xì</rt></ruby>
+                    <ruby>曩<rt>nǎng</rt></ruby>
+                    <ruby>鉢<rt>bō</rt></ruby>
+                    <ruby>多<rt>duō</rt></ruby>
+                    <ruby>曳<rt>yì</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>曩<rt>nǎng</rt></ruby>
+                    <ruby>謨<rt>mó</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>阿<rt>ē</rt></ruby>
+                    <ruby>他<rt>tā</rt></ruby>
+                    <ruby>骨<rt>gǔ</rt></ruby>
+                    <ruby>嚕<rt>lū</rt></ruby>
+                    <ruby>藥<rt>yào</rt></ruby>
+                    <ruby>室<rt>shì</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>拏<rt>ná</rt></ruby>
+                    <ruby>薩<rt>sà</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>摩<rt>mó</rt></ruby>
+                    <ruby>賀<rt>hè</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>囉<rt>luó</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(引)<rt>&emsp;</rt></ruby>
+                    <ruby>惹<rt>rě</rt></ruby>
+                    <ruby>摩<rt>mó</rt></ruby>
+                    <ruby>羅<rt>luó</rt></ruby>
+                    <ruby>𤚥<rt>mài</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>拏<rt>ná</rt></ruby>
+                    <ruby>藍<rt>lán</rt></ruby>
+                    <ruby>鉢<rt>bō</rt></ruby>
+                    <ruby>羅<rt>luó</rt></ruby>
+                    <ruby>尾<rt>wěi</rt></ruby>
+                    <ruby>沙<rt>shā</rt></ruby>
+                    <ruby>弭<rt>mǐ</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>薩<rt>sà</rt></ruby>
+                    <ruby>嚩<rt>pó</rt></ruby>
+                    <ruby>薩<rt>sà</rt></ruby>
+                    <ruby>怛<rt>dá</rt></ruby>
+                    <ruby>嚩<rt>pó</rt></ruby>
+                    <ruby>呬<rt>xì</rt></ruby>
+                    <ruby>底<rt>dǐ</rt></ruby>
+                    <ruby>瑟<rt>sè</rt></ruby>
+                    <ruby>吒<rt>zhà</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合)<rt>&emsp;</rt></ruby>
+                    <ruby>南<rt>nán</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>唵<rt>ōng</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>摩<rt>mó</rt></ruby>
+                    <ruby>尼<rt>ní</rt></ruby>
+                    <ruby>跋<rt>bá</rt></ruby>
+                    <ruby>捺<rt>nà</rt></ruby>
+                    <ruby>羅<rt>luó</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合)<rt>&emsp;</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>娑<rt>suō</rt></ruby>
+                    <ruby>嚩<rt>pó</rt></ruby>
+                    <ruby>賀<rt>hè</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>布<rt>bù</rt></ruby>
+                    <ruby>嚕<rt>lū</rt></ruby>
+                    <ruby>拏<rt>ná</rt></ruby>
+                    <ruby>跋<rt>bá</rt></ruby>
+                    <ruby>捺<rt>nà</rt></ruby>
+                    <ruby>羅<rt>luó</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(二合)<rt>&emsp;</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>娑<rt>suō</rt></ruby>
+                    <ruby>嚩<rt>pó</rt></ruby>
+                    <ruby>賀<rt>hè</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>摩<rt>mó</rt></ruby>
+                    <ruby>拏<rt>ná</rt></ruby>
+                    <ruby>㗚<rt>lì</rt></ruby>
+                    <ruby>詑<rt>tuó</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>娑<rt>suō</rt></ruby>
+                    <ruby>嚩<rt>pó</rt></ruby>
+                    <ruby>賀<rt>hè</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>悉<rt>xī</rt></ruby>
+                    <ruby>定<rt>dìng</rt></ruby>
+                    <ruby>迦<rt>jiā</rt></ruby>
+                    <ruby>羅<rt>luó</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>娑<rt>suō</rt></ruby>
+                    <ruby>嚩<rt>pó</rt></ruby>
+                    <ruby>賀<rt>hè</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>吠<rt>fèi</rt></ruby>
+                    <ruby>室<rt>shì</rt></ruby>
+                    <ruby>羅<rt>luó</rt></ruby>
+                    <ruby>末<rt>mò</rt></ruby>
+                    <ruby>拏<rt>ná</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>娑<rt>suō</rt></ruby>
+                    <ruby>嚩<rt>pó</rt></ruby>
+                    <ruby>賀<rt>hè</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>難<rt>nán</rt></ruby>
+                    <ruby class="xiaoZi_10 ziDongKuanDu">(上)<rt>&emsp;</rt></ruby>
+                    <ruby>曩<rt>nǎng</rt></ruby>
+                    <ruby>馱<rt>tuó</rt></ruby>
+                    <ruby>也<rt>yě</rt></ruby>
+                    <ruby>　<rt>&nbsp;</rt></ruby>
+                    <ruby>娑<rt>suō</rt></ruby>
+                    <ruby>嚩<rt>pó</rt></ruby>
+                    <ruby>賀<rt>hè</rt></ruby>
+                </div>
+                <p class="zhengWen xiaYi">
+                    &emsp;&emsp;若有受持念誦我心真言作諸供養者。唯我身心意在汝身上。愛念汝無量。若有人求財求官。求一切外諸心事。自令汝願滿足。不令惡人害汝。能令汝等受持我法者。即得富貴安樂。端正男女奴婢車乘五穀豆麥田莊妻妾。必決定與汝等。成就一切樂具。隨汝意願滿足。乃至命終身往所生處。隨汝意願所生不相違背。若不實者。我不名為護法天王。我必為汝墮阿鼻地獄。汝等受持讀誦者。於我法中生少疑心誹謗輕罵者。是皆汝等地獄苦業因緣未盡。即知此人無有出期。汝等人民憶持者。香華油酥燈乃作水壇安置像於中。種種草菓子飲食煎餅乳酪等。粥酥蜜盤如法供養。作音樂歌唄。梵音讚歎。如是日日每月一日十五日正月七日。對像前念誦行道。我示現身。或於壇中施諸寶物與汝滿足。或隨汝心行動。所向去處東西南北四維上下。一切去處乃至夜夢中。皆施與汝等。令人無畏入陣刀戟相害無能知者。但汝心存念我名及真言句。手執契印。所擬方面彼所有惡敵兵賊。悉自被縛。自散自顛自滅自狂。無能害我法者。若有持我心真言。和合香用含口見貴人。取麝香欝金香龍腦香丁香等和合。隨多少和合。用金銀合子盛。如無金銀合子。用白琉璃合子。如無琉璃合子。用瓷合子盛和合香也。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    四、表白祈愿文
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;神威有赫。願力惟深。
+                    <br>&emsp;&emsp;是大菩萨。悲心救济。
+                    <br>&emsp;&emsp;仰啟神聰俯垂昭鑒。中华人民共和国某省某某縣某地址某人等於今乙巳年正月初五之辰。恭对圣前。諷演秘章。稱揚嘉號。所集功德。專伸祈禱。南无多宝天王护法藏菩萨摩诃萨。伏叩仰祈家庭兴旺。身体安和。事业興隆。衛家庭而吉慶。如斯祈禱。必望冥加。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    五、举扬圣德赞
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;多宝天王。护国护法。是大菩萨弘愿深。恩德无能论。财宝满人间。祈祷诚诚。
+                    <br>&emsp;&emsp;南无多宝天王菩萨摩诃萨摩诃般若。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    六、圣道回向
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;愿以此功德
+                    <br>&emsp;&emsp;回向于一切
+                    <br>&emsp;&emsp;我等与众生
+                    <br>&emsp;&emsp;皆共成佛道
+                    <br>&emsp;&emsp;十方三世一切佛
+                    <br>&emsp;&emsp;一切菩萨摩诃萨
+                    <br>&emsp;&emsp;摩诃般若波罗蜜
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    七、三皈依
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依佛&emsp;当愿众生
+                    <br>&emsp;&emsp;体解大道&emsp;发无上心
+                    <br>&emsp;&emsp;自皈依法&emsp;当愿众生
+                    <br>&emsp;&emsp;深入经藏&emsp;智慧如海
+                    <br>&emsp;&emsp;自皈依僧&emsp;当愿众生
+                    <br>&emsp;&emsp;统理大众&emsp;一切无碍
+                    <br>&emsp;&emsp;和南圣众
+                </p>
+                <p class="kongHang">
+                </p>
+            </rich-text>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../js/wrapRubies.js"></script>
+    <script type="text/javascript" src="../../../js/zh.js"></script>
+</body>
+
+</html>
