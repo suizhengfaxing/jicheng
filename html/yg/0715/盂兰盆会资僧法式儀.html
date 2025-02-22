@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盂兰盆会资僧法式儀</title>
+    <link rel="stylesheet" href="../../../css/common.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(250, 248, 247);
+        }
+
+        .container>>>img {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            margin: 2px auto;
+            /*min-height: 100vh;*/
+            /*border: 2px solid skyblue;*/
+        }
+
+        .detailsIMg {
+            width: 100%;
+            height: 223px;
+        }
+
+        .detailsText {
+            /* margin: 10px 0;
+            text-indent: 40px; */
+            color: #97816B;
+            max-width: 100%;
+            min-height: 100%;
+            /*border: 3px solid red;*/
+            /*margin: 0 auto;*/
+            /*display: flex;*/
+            /*justify-content: center;*/
+        }
+
+        .texts {
+            width: 80% !important;
+            margin-bottom: 70px;
+            /*background-color: blue;*/
+        }
+
+        .texts div {
+            max-width: 100%;
+            /*overflow: hidden;*/
+            /*white-space: wrap;*/
+            /*text-overflow: ellipsis;*/
+            /*   margin: 0 auto;*/
+        }
+
+        .texts_box1 {
+            /*margin: 0 !important;*/
+            width: 80% !important;
+            margin-bottom: 70px !important;
+            /*border: 4px solid blue; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="detailsText">
+            <rich-text :nodes="texts" class="texts">
+                <button id="pinyin-button" onclick="zh_tran('s');">简</button>
+                <p class="yiJiBiaoTi">
+                    盂兰盆会资僧法式儀
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    一、称扬赞
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;智度論偈云。
+                    <br>&emsp;&emsp;佛以百事讚是僧，施之雖少得報多，
+                    <br>&emsp;&emsp;是第三寶聲遠聞，以是故應供養僧。
+                    <br>
+                    <br>&emsp;&emsp;智度論偈云。
+                    <br>&emsp;&emsp;孔雀雖有色嚴身 不如鴻鶴能遠飛
+                    <br>&emsp;&emsp;白衣雖有富貴力 不如出家功德深
+                    <br>
+                    <br>&emsp;&emsp;供养者：
+                    <br>&emsp;&emsp;顶礼合掌说辞：(仰白诸师。大慈忍聽。今有我慈念精舍全体同人。為祈正法久住，国泰民安，家庭和睦，诸事顺利，特发心回总本山，奉行供佛资僧培福法会。所供净资，随师所用，由师安排。至此胜缘，恳请导师为我等，慈悲开示，阿弥陀佛。
+                    <br>
+                    <br>&emsp;&emsp;导师开示后诵《吉祥经》
+                    <br>&emsp;&emsp;如是我闻，一时，佛住在近舍卫国的祇树给孤独园，于深夜时，有一金光四射天神，莅临佛所，遍照祇园，行近佛前，顶礼佛足，立于一边，以偈而问佛：诸天与世人，企求诸善德，思惟吉祥义，祗佛为示知。尔时佛慈愍，天神与人众，开示胜吉祥，以偈而答曰：
+                    <br>&emsp;&emsp;不亲近愚人，应亲近智者，敬礼有德者，此为最吉祥。
+                    <br>&emsp;&emsp;家居择善处，往昔修善业，决心行正道，此为最吉祥。
+                    <br>&emsp;&emsp;广学善工巧，戒学具律仪，真实柔和语，此为最吉祥。
+                    <br>&emsp;&emsp;孝顺于父母，护养妻与子，正命维生计，此为最吉祥。
+                    <br>&emsp;&emsp;布施修十善，扶助诸亲族，不作诸罪业，此为最吉祥。
+                    <br>&emsp;&emsp;禁绝造诸恶，不染麻醉物，精勤修善法，此为最吉祥。
+                    <br>&emsp;&emsp;恭敬与谦逊，知足常感恩，适时听闻法，此为最吉祥。
+                    <br>&emsp;&emsp;忍辱易受教，诣沙门僧伽，请教于佛法，此为最吉祥。
+                    <br>&emsp;&emsp;善御修梵行，彻了四圣谛，亲证悟涅槃，此为最吉祥。
+                    <br>&emsp;&emsp;虽接触世法，清静无忧恼，安稳离垢染，此为最吉祥。
+                    <br>&emsp;&emsp;人天如是修，能胜诸怨敌，随处皆安乐，此为最吉祥。
+                    <br>
+                    <br>&emsp;&emsp;皈依佛，佛是我真正皈依处。
+                    <br>&emsp;&emsp;除此之外，别无皈依处。
+                    <br>
+                    <br>&emsp;&emsp;皈依法，法是我真正皈依处，
+                    <br>&emsp;&emsp;除此之外，别无皈依处。
+                    <br>
+                    <br>&emsp;&emsp;皈依僧，僧是我真正皈依处，
+                    <br>&emsp;&emsp;除此之外，别无皈依处。
+                    <br>
+                    <br>&emsp;&emsp;“请导师接受我们的衣药供养”，
+                    <br>&emsp;&emsp;“请导师接受我们的食物供养”，
+                    <br>&emsp;&emsp;“请导师接受我们的卧具供养。”
+                    <br>
+                    <br>&emsp;&emsp;师云：
+                    <br>&emsp;&emsp;四事供养是你们护持三宝的开始，希望你们常住安乐法，常依法安住。
+                    <br>
+                    <br>&emsp;&emsp;阿弥陀佛！
+                    <br>
+                    <br>&emsp;&emsp;回向：
+                    <br>&emsp;&emsp;资僧功德殊胜行，无边胜福皆回向，
+                    <br>&emsp;&emsp;普愿沉溺诸众生，速往无量光佛刹。
+                    <br>&emsp;&emsp;十方三世一切佛，一切菩萨摩诃萨。
+                    <br>&emsp;&emsp;摩诃般若波罗蜜。
+                    <br>
+                    <br>&emsp;&emsp;师云：
+                    <br>&emsp;&emsp;愿你们供僧蒙福，常依法修。
+                    <br>&emsp;&emsp;阿弥陀佛！
+                    <br>&emsp;&emsp;善哉善哉！
+                </p>
+                <p class="kongHang">
+                </p>
+            </rich-text>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../js/wrapRubies.js"></script>
+    <script type="text/javascript" src="../../../js/zh.js"></script>
+</body>
+
+</html>

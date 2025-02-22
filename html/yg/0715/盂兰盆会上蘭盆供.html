@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盂兰盆会上蘭盆供</title>
+    <link rel="stylesheet" href="../../../css/common.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(250, 248, 247);
+        }
+
+        .container>>>img {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            margin: 2px auto;
+            /*min-height: 100vh;*/
+            /*border: 2px solid skyblue;*/
+        }
+
+        .detailsIMg {
+            width: 100%;
+            height: 223px;
+        }
+
+        .detailsText {
+            /* margin: 10px 0;
+            text-indent: 40px; */
+            color: #97816B;
+            max-width: 100%;
+            min-height: 100%;
+            /*border: 3px solid red;*/
+            /*margin: 0 auto;*/
+            /*display: flex;*/
+            /*justify-content: center;*/
+        }
+
+        .texts {
+            width: 80% !important;
+            margin-bottom: 70px;
+            /*background-color: blue;*/
+        }
+
+        .texts div {
+            max-width: 100%;
+            /*overflow: hidden;*/
+            /*white-space: wrap;*/
+            /*text-overflow: ellipsis;*/
+            /*   margin: 0 auto;*/
+        }
+
+        .texts_box1 {
+            /*margin: 0 !important;*/
+            width: 80% !important;
+            margin-bottom: 70px !important;
+            /*border: 4px solid blue; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="detailsText">
+            <rich-text :nodes="texts" class="texts">
+                <button id="pinyin-button" onclick="zh_tran('s');">简</button>
+                <p class="yiJiBiaoTi">
+                    盂兰盆会上蘭盆供
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;先鳴鐘三下。禮佛三拜。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    ①擧献供贊
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;蘭盆會啓。普度門開。恭迎三寶降臨來。一一坐花臺。唯願慈哀。受我妙香齋　南無齋供養菩薩摩訶薩(三稱）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    ②長跪白云：
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;恭聞法身常寂。本無去以無來。妙智圓融。實非空而非色。靈明絕待。覺海難量。俯潤迷蒙。時彰影響。今屬如來歡喜。僧衆自恣。當爲七世父母。施設百味蘭盆。儀遵充國。孝效目連。黍稷唯馨。覺王斯格。願降慈光。受我供養。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    ③擧云：
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;三身如來(衆和)　奉獻蘭盆。上供三寶(說已。執爐白請詞云)。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;大雄出世。同赴齋於舍衛城中。正法流行。共應供於匿王宮內。旣隨機而現相。亦普濟於羣生。今辰衆等謹設蘭盆。志心頂禮。專申奉獻。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;千華臺上。百寶光中。三十二相之能仁。八十種好之大覺。盡十方。遍法界。過現未來。無量佛寶。唯願不捨慈悲。受斯供養　(三白。三拜）。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    ⑤擧供佛偈。鳴鐘鼓鐺鈸。齊唱三遍。或一遍)。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南無蓮座天人師，威德端嚴無與等，唯願佛寶大慈悲，受此盂蘭盆供養，南無香水海。花藏界。蘭盆供，獻眞如，佛陀耶
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;(衆唱竟。維那執爐。高聲請法云)
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;今辰衆等。謹設蘭盆。志心頂禮。專爲奉獻。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;西乾竺國。白馬䭾來。修多羅了義上乘。十二部眞空妙典。盡十方。遍法界。過現未來。無量法寶。唯願不捨慈悲。受斯供養(三白。三拜）。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    ⑥擧供法偈。仍鳴鼓鈸等。唱三遍。或一遍)。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南無相應最勝法　成就菩提涅槃果　唯願法寶大慈悲　受此盂蘭盆供養　南無香水海。花藏界。蘭盆供獻。海藏達磨耶。(衆唱竟。維那執爐高聲請僧云)　今辰衆等。謹設蘭盆。志心頂禮。專爲奉獻。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;三明八解。五果六通。分身於此界他方。應供於人間天上。盡十方。遍法界。過現未來無量僧寶。唯願不捨慈悲。受斯供養(三白三拜）。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    ⑦擧供僧偈。仍鳴鼓鈸。或三唱。或一唱)
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南無自在衆中尊　栴檀林內澄心者　唯願僧寶大慈悲　受此盂蘭盆供養　南無香水海。花藏界。蘭盆供獻福田僧伽耶(唱竟。大衆齊聲緩誦云)。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南無常住十方佛。南無常住十方法。南無常住十方僧。南無本師釋迦牟尼佛。南無藥師琉璃光佛。南無過去覺花定自在王佛。南無淸淨蓮花目佛。南無多寶如來。南無寶勝如來。南無妙色身如來。南無廣博身如來。南無離怖畏如來。南無甘露王如來。南無阿彌陀如來。南無世間廣大威德自在光明如來。南無佛說盂蘭盆經。南無大慈地藏王菩薩。南無大悲觀世音菩薩。南無大勢至菩薩。南無護法諸天菩薩。南無伽藍聖衆菩薩。南無歷代祖師菩薩。南無蘭盆會上佛菩薩。南無古往自恣緣覺聲聞僧。南無大孝目犍連尊者。南無三界聖凡幽顯尊神。(三請已）。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    ⑧誦變食呪二十一遍。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;甘露呪七遍。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;上供文如常。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;又普供養呪七遍已。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    ⑨祈愿宣疏
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南無十方常住三寶（三稱）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    ⑩唱五果赞
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;五果百味。香色淸新。自恣會上獻能仁。願親出沉淪。普濟幽冥。沙界布陽春。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南無普供養菩薩摩訶薩。(三唱）。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;擧回向偈颂
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;以此蘭盆供善根，報答父母劬勞恩，存者福樂壽無疆，亡者離苦得超昇，四生九有諸含識，八難三途苦衆生，各各悔過洗瑕疵，盡蒙慈濟出沉淪。(衆各回本處)。
+                </p>
+                <p class="kongHang">
+                </p>
+            </rich-text>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../js/wrapRubies.js"></script>
+    <script type="text/javascript" src="../../../js/zh.js"></script>
+</body>
+
+</html>
