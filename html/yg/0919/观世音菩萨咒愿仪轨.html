@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九月十九</title>
+    <link rel="stylesheet" href="../../../css/common.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(250, 248, 247);
+        }
+
+        .container>>>img {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            margin: 2px auto;
+            /*min-height: 100vh;*/
+            /*border: 2px solid skyblue;*/
+        }
+
+        .detailsIMg {
+            width: 100%;
+            height: 223px;
+        }
+
+        .detailsText {
+            /* margin: 10px 0;
+            text-indent: 40px; */
+            color: #97816B;
+            max-width: 100%;
+            min-height: 100%;
+            /*border: 3px solid red;*/
+            /*margin: 0 auto;*/
+            /*display: flex;*/
+            /*justify-content: center;*/
+        }
+
+        .texts {
+            width: 80% !important;
+            margin-bottom: 70px;
+            /*background-color: blue;*/
+        }
+
+        .texts div {
+            max-width: 100%;
+            /*overflow: hidden;*/
+            /*white-space: wrap;*/
+            /*text-overflow: ellipsis;*/
+            /*   margin: 0 auto;*/
+        }
+
+        .texts_box1 {
+            /*margin: 0 !important;*/
+            width: 80% !important;
+            margin-bottom: 70px !important;
+            /*border: 4px solid blue; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="detailsText">
+            <rich-text :nodes="texts" class="texts">
+                <button id="pinyin-button" onclick="zh_tran('s');">简</button>
+                <p class="yiJiBiaoTi">
+                    观世音菩萨咒愿仪轨
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    一、香赞圣德
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;炉香乍热 法界蒙熏
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;诸佛海会悉遥闻
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;随处结祥云 诚意方殷
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;诸佛现全身
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无香云盖菩萨摩诃萨（三称）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    二、称扬圣号
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无观世音菩萨，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无观世音菩萨，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无观世音菩萨。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    三、正诵经咒
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无、喝啰怛那、哆啰夜耶，南无、阿唎耶，婆卢羯帝、烁钵啰耶，菩提萨埵婆耶，摩诃萨埵婆耶，摩诃、迦卢尼迦耶，唵，萨皤啰罚曳，数怛那怛写，南无、悉吉栗埵、伊蒙阿唎耶，婆卢吉帝、室佛啰楞驮婆，南无、那啰谨墀，醯利摩诃、皤哆沙咩，萨婆阿他、豆输朋，阿逝孕，萨婆萨哆、那摩婆萨哆，那摩婆伽，摩罚特豆.怛侄他.唵，阿婆卢醯.卢迦帝.迦罗帝.夷醯唎.摩诃菩提萨埵，萨婆萨婆.摩啰摩啰，摩醯摩醯、唎驮孕.俱卢俱卢、羯蒙.度卢度卢、罚阇耶帝.摩诃罚阇耶帝.陀啰陀啰.地唎尼.室佛啰耶.遮啰遮啰.摩么罚摩啰.穆帝隶.伊醯伊醯.室那室那.阿啰参、佛啰舍利.罚沙罚参.佛啰舍耶.呼嚧呼嚧摩啰.呼嚧呼嚧醯利.娑啰娑啰，悉唎悉唎.苏嚧苏嚧.菩提夜、菩提夜.菩驮夜、菩驮夜.弥帝唎夜.那啰谨墀.地利瑟尼那.婆夜摩那.娑婆诃.悉陀夜.娑婆诃.摩诃悉陀夜.娑婆诃.悉陀喻艺.室皤啰耶.娑婆诃.那啰谨墀.娑婆诃.摩啰那啰.娑婆诃.悉啰僧、阿穆佉耶，娑婆诃.娑婆摩诃、阿悉陀夜.娑婆诃.者吉啰、阿悉陀夜.娑婆诃.波陀摩、羯悉陀夜.娑婆诃.那啰谨墀、皤伽啰耶.娑婆诃.摩婆利、胜羯啰夜.娑婆诃.南无、喝啰怛那、哆啰夜耶，南无、阿唎耶.婆嚧吉帝.烁皤啰夜.娑婆诃.唵，悉殿都.漫多啰.跋陀耶，娑婆诃.
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    四、偈赞圣德
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;观音菩萨妙难酬，清静庄严累劫修。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;三十二应周尘刹，百千万劫化阎浮。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;瓶中甘露常遍洒，手内杨枝不计秋。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;千处祈求千处应，苦海常作渡人舟。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无普陀山琉璃世界大慈大悲观世音菩萨（随自己时间念）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    五、发愿表白
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无号圆通名自在 观音如来 广发弘誓愿
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无一念心无挂碍 观音如来 常居南海愿
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无住娑婆幽冥界 观音如来 寻声救苦愿
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无降邪魔除妖怪 观音如来 能除危险愿
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无清净瓶垂杨柳 观音如来 甘露洒心愿
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无大慈悲能喜舍 观音如来 常行平等愿
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无昼夜巡无损坏 观音如来 誓灭三涂愿
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无望南岳勤礼拜 观音如来 枷锁解脱愿
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无造法船游苦海 观音如来 度尽众生愿
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无前幢幡后宝盖 观音如来 接引西方愿
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无无量寿佛境界 观音如来 弥陀受记愿
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无端严身无比赛 观音如来 果修十二愿
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    六、赞圣回向
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;观音大士 悉号圆通
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;十二大愿誓弘深
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;苦海渡迷津 救苦寻声
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;无刹不现身
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无观世音菩萨摩诃萨
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;愿以此功德，回向于一切，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;我等与众生，皆共成佛道。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;十方三世一切佛，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;一切菩萨摩诃萨，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;摩诃般若波罗蜜。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    七、结偈皈依
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依佛，当愿众生，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;体解大道，发无上心。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依法，当愿众生，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;深入经藏，智慧如海。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依僧，当愿众生，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;统理大众，一切无碍，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;和南圣众。
+                </p>
+                <p class="kongHang">
+                </p>
+            </rich-text>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../js/wrapRubies.js"></script>
+    <script type="text/javascript" src="../../../js/zh.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九月三十</title>
+    <link rel="stylesheet" href="../../../css/common.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(250, 248, 247);
+        }
+
+        .container>>>img {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            margin: 2px auto;
+            /*min-height: 100vh;*/
+            /*border: 2px solid skyblue;*/
+        }
+
+        .detailsIMg {
+            width: 100%;
+            height: 223px;
+        }
+
+        .detailsText {
+            /* margin: 10px 0;
+            text-indent: 40px; */
+            color: #97816B;
+            max-width: 100%;
+            min-height: 100%;
+            /*border: 3px solid red;*/
+            /*margin: 0 auto;*/
+            /*display: flex;*/
+            /*justify-content: center;*/
+        }
+
+        .texts {
+            width: 80% !important;
+            margin-bottom: 70px;
+            /*background-color: blue;*/
+        }
+
+        .texts div {
+            max-width: 100%;
+            /*overflow: hidden;*/
+            /*white-space: wrap;*/
+            /*text-overflow: ellipsis;*/
+            /*   margin: 0 auto;*/
+        }
+
+        .texts_box1 {
+            /*margin: 0 !important;*/
+            width: 80% !important;
+            margin-bottom: 70px !important;
+            /*border: 4px solid blue; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="detailsText">
+            <rich-text :nodes="texts" class="texts">
+                <button id="pinyin-button" onclick="zh_tran('s');">简</button>
+                <p class="yiJiBiaoTi">
+                    药师佛祝圣仪轨
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    一、香讚
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;炉香乍热。法界蒙薰。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;诸佛海会悉遥闻。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;随处结祥云。诚意方殷。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;诸佛现全身。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无香云盖菩萨摩诃萨（三称）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    二、称扬圣号
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;奈麻藥師琉璃光如來（三称）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    三、正诵经咒
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;药师琉璃光如来本愿功德经云：
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;爾時，曼殊室利法王子，承佛威神，從座而起，偏袒一肩，右膝著地，向薄伽梵，曲躬合掌，白言：「世尊！惟願演說如是相類諸佛名號，及本大願殊勝功德，令諸聞者業障銷除，為欲利樂像法轉時諸有情故。」
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;爾時，世尊讚曼殊室利童子言：「善哉！善哉！曼殊室利！汝以大悲，勸請我說諸佛名號、本願功德，為拔業障所纏有情，利益安樂像法轉時諸有情故。汝今諦聽，極善思惟，當為汝說。」曼殊室利言：「唯然！願說，我等樂聞。」
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;佛告曼殊室利：「東方去此過十殑伽沙等佛土，有世界名淨琉璃，佛號藥師琉璃光如來、應、正等覺、明行圓滿、善逝、世間解、無上丈夫、調御士、天人師、佛、薄伽梵。曼殊室利！彼佛世尊藥師琉璃光如來，本行菩薩道時，發十二大願，令諸有情，所求皆得。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;「第一大願：願我來世得阿耨多羅三藐三菩提時，自身光明，熾然照曜無量無數無邊世界，以三十二大丈夫相、八十隨好，莊嚴其身；令一切有情，如我無異。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;「第二大願：願我來世得菩提時，身如琉璃，內外明徹，淨無瑕穢，光明廣大，功德巍巍，身善安住，焰網莊嚴，過於日月；幽冥眾生，悉蒙開曉，隨意所趣，作諸事業。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;「第三大願：願我來世得菩提時，以無量無邊智慧方便，令諸有情，皆得無盡所受用物，莫令眾生有所乏少。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;「第四大願：願我來世得菩提時，若諸有情行邪道者，悉令安住菩提道中；若行聲聞獨覺乘者，皆以大乘而安立之。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;「第五大願：願我來世得菩提時，若有無量無邊有情，於我法中修行梵行，一切皆令得不缺戒，具三聚戒。設有毀犯，聞我名已，還得清淨，不墮惡趣。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;「第六大願：願我來世得菩提時，若諸有情，其身下劣，諸根不具，醜陋、頑愚、盲、聾、瘖、瘂、攣、躄、背僂、白癩、癲狂、種種病苦；聞我名已，一切皆得端正黠慧。諸根完具，無諸疾苦。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;「第七大願：願我來世得菩提時，若諸有情，眾病逼切，無救無歸，無醫無藥，無親無家，貧窮多苦，我之名號，一經其耳，病悉得除，身心安樂，家屬資具，悉皆豐足，乃至證得無上菩提。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;「第八大願：願我來世得菩提時，若有女人，為女百惡之所逼惱，極生厭離，願捨女身；聞我名已，一切皆得轉女成男，具丈夫相，乃至證得無上菩提。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;「第九大願：願我來世得菩提時，令諸有情，出魔羂網，解脫一切外道纏縛；若墮種種惡見稠林，皆當引攝置於正見，漸令修習諸菩薩行，速證無上正等菩提。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;「第十大願：願我來世得菩提時，若諸有情，王法所錄，縲縛鞭撻，繫閉牢獄，或當刑戮，及餘無量災難凌辱，悲愁煎迫，身心受苦；若聞我名，以我福德威神力故，皆得解脫一切憂苦。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;「第十一大願：願我來世得菩提時，若諸有情，飢渴所惱，為求食故造諸惡業；得聞我名，專念受持，我當先以上妙飲食，飽足其身；後以法味，畢竟安樂而建立之。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;「第十二大願：願我來世得菩提時，若諸有情，貧無衣服，蚊虻寒熱，晝夜逼惱；若聞我名，專念受持，如其所好，即得種種上妙衣服，亦得一切寶莊嚴具，華鬘塗香，鼓樂眾伎，隨心所翫，皆令滿足。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;「曼殊室利！是為彼世尊藥師琉璃光如來、應、正等覺，行菩薩道時，所發十二微妙上願。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;奈麻薄伽伐帝。鞞殺社窶嚕。薜瑠璃。鉢喇婆。喝囉闍也。怛他揭多也。阿囉喝帝。三藐三勃陀也。怛姪他。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;唵鞞殺逝。鞞殺逝。鞞殺社。三沒揭帝莎訶
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;（随自己时间念）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    四、祝愿回向
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;恭聞。東方世界。藥師如來。功德智慧。無量莊嚴。放淨光明。過於日月。一切剎土。淨如琉璃。與西方界。等無有異。十二大願。利樂有情。凡有所求。皆隨其心。受持佛名。與佛無異。具大丈夫相。及八十隨形。一切惡趣無量灾難。以佛威神。皆得解脫。弟子(衆等)願得無上菩提。生生世世。行菩薩道亦如藥師琉璃光如來。所發十二大願。利樂一切有情。即此娑婆世界。身心剎土。皆如琉璃面見我佛及阿彌陀。祈願。法界有情。東西相泯。二見永忘。於中道義。共證真常。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;更以此功德，回向于一切，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;我等与众生，皆共成佛道，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;十方三世一切佛，一切菩萨摩诃萨，摩诃般若波罗蜜。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    五、赞圣德能
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;藥師海會。琉璃相光。八大菩薩降吉祥。七佛廣宣揚。日月威光。功德實難量。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无消灾延寿药师佛。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    六、结偈皈依
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依佛，当愿众生，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;体解大道，发无上心。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依法，当愿众生，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;深入经藏，智慧如海。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依僧，当愿众生，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;统理大众，一切无碍，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;和南圣众。
+                </p>
+                <p class="kongHang">
+                </p>
+            </rich-text>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../js/wrapRubies.js"></script>
+    <script type="text/javascript" src="../../../js/zh.js"></script>
+</body>
+
+</html>

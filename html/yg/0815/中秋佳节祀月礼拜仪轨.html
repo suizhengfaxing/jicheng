@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八月十五</title>
+    <link rel="stylesheet" href="../../../css/common.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(250, 248, 247);
+        }
+
+        .container>>>img {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            margin: 2px auto;
+            /*min-height: 100vh;*/
+            /*border: 2px solid skyblue;*/
+        }
+
+        .detailsIMg {
+            width: 100%;
+            height: 223px;
+        }
+
+        .detailsText {
+            /* margin: 10px 0;
+            text-indent: 40px; */
+            color: #97816B;
+            max-width: 100%;
+            min-height: 100%;
+            /*border: 3px solid red;*/
+            /*margin: 0 auto;*/
+            /*display: flex;*/
+            /*justify-content: center;*/
+        }
+
+        .texts {
+            width: 80% !important;
+            margin-bottom: 70px;
+            /*background-color: blue;*/
+        }
+
+        .texts div {
+            max-width: 100%;
+            /*overflow: hidden;*/
+            /*white-space: wrap;*/
+            /*text-overflow: ellipsis;*/
+            /*   margin: 0 auto;*/
+        }
+
+        .texts_box1 {
+            /*margin: 0 !important;*/
+            width: 80% !important;
+            margin-bottom: 70px !important;
+            /*border: 4px solid blue; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="detailsText">
+            <rich-text :nodes="texts" class="texts">
+                <button id="pinyin-button" onclick="zh_tran('s');">简</button>
+                <p class="yiJiBiaoTi">
+                    中秋佳节祀月礼拜仪轨
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    一、炉香赞
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;炉香乍爇 法界蒙薰
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;诸佛海会悉遥闻
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;随处结祥云 诚意方殷
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;诸佛现全身
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无香云盖菩萨摩诃萨(三称)
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    二、称扬圣德号
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无月光遍照菩萨(三称)
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    三、正诵经咒
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南谟薄伽伐帝 鞞杀社 窭噜薜琉璃 跋喇婆 喝啰阇也 怛他揭多也 阿啰喝帝 三藐三勃陀耶 怛侄他 唵 鞞杀逝 鞞杀逝 鞞杀社 三没揭帝 莎诃。（念二十一遍）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    四、表白祈愿回向
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;菩薩清涼月，遊於畢竟空，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;垂光照三界，心法無不現。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;上来今逢，中秋佳节之际
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;弟子某某，及阖家人等，虔诚恭敬顶礼，南无月光遍照菩萨摩诃萨。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;祈愿菩萨，慈悲加持，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;世界和平，国泰民安，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;疫情早退，灾难不生，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;家庭和睦，事业吉祥，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;福禄寿喜，康泰安宁，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;【随自己祈愿祝福等语】
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;愿以此功德，回向于一切，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;我等与众生，皆共成佛道。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;十方三世一切佛，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;一切菩萨摩诃萨，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;摩诃般若波罗蜜。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    五、拜愿达圣
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无月光遍照菩萨。（十二拜）
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    六、举扬圣赞
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;云开空净 独露婵娟
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;皎洁无瑕体自圆
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;不动历周天 照彻无边
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;恩泽布大千
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无月宫太阴尊天菩萨(三称)
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    七、三皈依结偈
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依佛，当愿众生，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;体解大道，发无上心。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依法，当愿众生，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;深入经藏，智慧如海。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依僧，当愿众生，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;统理大众，一切无碍，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;和南圣众。
+                </p>
+                <p class="kongHang">
+                </p>
+            </rich-text>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../js/wrapRubies.js"></script>
+    <script type="text/javascript" src="../../../js/zh.js"></script>
+</body>
+
+</html>

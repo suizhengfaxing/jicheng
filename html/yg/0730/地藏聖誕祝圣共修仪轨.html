@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>七月三十</title>
+    <link rel="stylesheet" href="../../../css/common.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(250, 248, 247);
+        }
+
+        .container>>>img {
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            margin: 2px auto;
+            /*min-height: 100vh;*/
+            /*border: 2px solid skyblue;*/
+        }
+
+        .detailsIMg {
+            width: 100%;
+            height: 223px;
+        }
+
+        .detailsText {
+            /* margin: 10px 0;
+            text-indent: 40px; */
+            color: #97816B;
+            max-width: 100%;
+            min-height: 100%;
+            /*border: 3px solid red;*/
+            /*margin: 0 auto;*/
+            /*display: flex;*/
+            /*justify-content: center;*/
+        }
+
+        .texts {
+            width: 80% !important;
+            margin-bottom: 70px;
+            /*background-color: blue;*/
+        }
+
+        .texts div {
+            max-width: 100%;
+            /*overflow: hidden;*/
+            /*white-space: wrap;*/
+            /*text-overflow: ellipsis;*/
+            /*   margin: 0 auto;*/
+        }
+
+        .texts_box1 {
+            /*margin: 0 !important;*/
+            width: 80% !important;
+            margin-bottom: 70px !important;
+            /*border: 4px solid blue; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="detailsText">
+            <rich-text :nodes="texts" class="texts">
+                <button id="pinyin-button" onclick="zh_tran('s');">简</button>
+                <p class="yiJiBiaoTi">
+                    地藏聖誕祝圣共修仪轨
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    一、祝圣香赞
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;炉香乍热。法界蒙薰。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;诸佛海会悉遥闻。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;随处结祥云。诚意方殷。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;诸佛现全身。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;南无香云盖菩萨摩诃萨（三称）
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    二、称圣德号
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;柰麻大慈地藏王菩薩。(三稱)
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    三、正诵经咒
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;地藏菩薩本願經。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;見聞利益品偈曰。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;吾觀地藏威神力。恒河沙劫說難盡。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;見聞瞻禮一念間。利益人天無量事。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;若男若女若龍神。報盡應當墮惡道。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;志心皈依大士身。壽命轉增除罪障。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;少失父母恩愛者。未知魂神在何趣。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;兄弟姊妹及諸親。生長以來皆不識。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;或塑或畵大士身。悲戀瞻禮不暫捨。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;三七日中念其名。菩薩當現無邊體。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;示其眷屬所生界。縱墮惡趣尋出離。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;若能不退是初心。即獲摩頂受聖記。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;欲修無上菩提者。乃至出離三界苦。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;是人即發大悲心。先當瞻禮大士像。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;一切諸願速成就。永無業障能遮止。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;有人發心念經典。欲度羣迷超彼岸。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;雖立是願不思議。旋讀旋忘多廢失。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;斯人有業障惑故。於大乘經不能記。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;供養地藏以香花。衣服飲食諸玩具。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;以淨水安大士前。一日一夜求服之。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;發殷重心慎五辛。酒肉邪淫及妄語。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;三七日內勿殺害。至心思念大士名。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;即於夢中見無邊。覺來便得利根耳。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;應是經教歷耳聞。千萬生中永不忘。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;以是大士不思議。能使斯人獲此慧。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;貧窮衆生及疾病。家宅凶衰眷屬離。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;睡夢之中悉不安。求者乖違無稱遂。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;志心瞻禮地藏像。一切惡事皆消滅。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;至於夢中盡得安。衣食豐饒神鬼護。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;欲入山林及渡海。毒惡禽獸及惡人。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;惡神惡鬼并惡風。一切諸難諸苦惱。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;但當瞻禮及供養。地藏菩薩大士像。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;如是山林大海中。應是諸惡皆消滅。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;觀音志心聽吾說。地藏無盡不思議。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;百千萬劫說不周。廣宣大士如是力。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;地藏名字人若聞。乃至見像瞻禮者。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;香花衣服飲食奉。供養百千受妙樂。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;若能以此迴法界。畢竟成佛超生死。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;是故觀音汝當知。普告恒沙諸國土。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;唵。三陀囉伽陀娑婆訶(随自己时间）。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    四、表白祝圣祈愿
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;伏以。金風載發。肇開金容之祥。玉露將濡。適顯玉毫之瑞。率土傳誕降佳辰。秋月初盡。普天仰和煦聖德。杲曰正中。切念衆等。身居末世。罪結多生。求脫苦輪。必藉仁風之披拂。欲登樂地。全依慈照以逍遙。茲值。曇花示現之期。敬舉芹藻薦馨之典。衆等。伏願。金錫重光。明珠流焰。癡狂頓歇。開無始之鐵城。熱惱驟除。出眼前之火宅。人天普利。幽明咸資。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    五、举扬圣赞
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;地藏大士。誓願宏深。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;明珠照破鐵圍城。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;金錫振幽冥。禮像稱名。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;沙界布陽春。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;柰麻大慈地藏菩薩。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    六、回向祝福
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;愿以此功德，普及于一切，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;我等与众生，皆共成佛道，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;普愿疫情等，诸灾早消除，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;更祈国安宁，世界永和平。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;十方三世一切佛，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;一切菩萨摩诃萨，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;摩诃般若波罗蜜。
+                </p>
+                <p class="kongHang">
+                </p>
+                <p class="erJiBiaoTi zuoDuiQi">
+                    七、三皈结偈
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依佛，当愿众生，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;体解大道，发无上心。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依法，当愿众生，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;深入经藏，智慧如海。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;自皈依僧，当愿众生，
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;统理大众，一切无碍。
+                </p>
+                <p class="zhengWen">
+                    &emsp;&emsp;和南圣众。
+                </p>
+                <p class="kongHang">
+                </p>
+            </rich-text>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../js/wrapRubies.js"></script>
+    <script type="text/javascript" src="../../../js/zh.js"></script>
+</body>
+
+</html>
