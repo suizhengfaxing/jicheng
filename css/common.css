@@ -75,19 +75,12 @@ rt {
 .kuoHao {
   font-family: "楷体", "楷体_GB2312", "SIMKAI";
   word-break: keep-all;
-  /* 不换行 */
-  white-space: nowrap;
-  /* 不换行 */
-}
-
-.youPinYin {
-  width: 1em;
 }
 
 /* 一级标题 */
 .yiJiBiaoTi {
-  line-height: 3em;
-  margin-bottom: 0px;
+  /* line-height: 3em; */
+  margin: 1em 0em 0.5em;
   padding: 0px;
   outline: 0px;
   max-width: 100%;
@@ -123,8 +116,8 @@ rt {
 
 /* 二级标题 */
 .erJiBiaoTi {
-  line-height: 3em;
-  margin-bottom: 0px;
+  /* line-height: 3em; */
+  margin: 1em 0em 0.5em;
   padding: 0px;
   outline: 0px;
   max-width: 100%;
@@ -140,9 +133,8 @@ rt {
 
 /* 三级标题 */
 .sanJiBiaoTi {
-  line-height: 3em;
-  margin-bottom: 0px;
-  margin: 0px;
+  /* line-height: 3em; */
+  margin: 1em 0em 0.5em;
   padding: 0px;
   outline: 0px;
   max-width: 100%;
@@ -174,7 +166,7 @@ rt {
 
 /* 作者 */
 .zuoZhe {
-  margin-bottom: 0px;
+  margin-bottom: 0.875em;
   padding: 0px;
   outline: 0px;
   max-width: 100%;
